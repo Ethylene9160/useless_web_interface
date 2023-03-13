@@ -1,4 +1,4 @@
-package com.example.myapplication.web;
+package com.example.web;
 
 public interface WebInterface {
     public static String SPLIT_INSIDE = "#";
