@@ -1,4 +1,4 @@
-package com.example.myapplication.web;
+package com.example.web;
 
 import java.io.Closeable;
 import java.io.DataInputStream;
