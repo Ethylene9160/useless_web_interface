@@ -6,3 +6,5 @@ Also you can write a `Server.java`, to transmit the message between different de
 However, this is just a useless package once you use it.
 
 Welcome to update this interface.
+
+> jdk version: 1.8
