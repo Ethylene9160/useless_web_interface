@@ -8,3 +8,7 @@ However, this is just a useless package once you use it.
 Welcome to update this interface.
 
 > jdk version: 1.8
+
+# How to use
+
+wait for updating...
