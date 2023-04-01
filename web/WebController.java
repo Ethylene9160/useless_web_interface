@@ -7,8 +7,10 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class WebController {
+    //define the default server address and port here
     public static String SERVER_ADDRESS = "127.0.0.1";
     public static final int SERVER_PORT = 8888;
+    
     private WebInterface web;
     private Socket serverSocket;
     private Sender sender;
@@ -38,7 +40,7 @@ public class WebController {
 
     public void creatWebController(WebInterface web){
         try {
-            this.creatWebController(new Socket("127.0.0.1", 8888), web);
+            this.creatWebController(new Socket(SERVER_ADDRESS, SERVER_PORT), web);
         } catch (IOException e) {
             e.printStackTrace();
         }
