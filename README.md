@@ -11,4 +11,31 @@ Welcome to update this interface.
 
 # How to use
 
+You can impliment `WebInteface.java`, and override this method. And besides, announce an instance of `WebController.java` in the code, to realize static proxy.
+
+Here is a naive examole.
+
+```java
+
+class Test impliment WebInteface{
+  private WebController controller;
+  
+  public Test(){
+    controller = new WebController(this);
+    controller.send();
+  }
+  
+  void send(){
+    new Thread(()->controller.send("Hello, world"));
+  }
+  
+  @override
+  public void webAction(String message){
+    System.out.println(message);
+  }
+
+}
+
+```
+
 wait for updating...
