@@ -26,7 +26,7 @@ class Test impliment WebInteface{
   }
   
   void send(){
-    new Thread(()->controller.send("Hello, world"));
+    controller.send("Hello, world");
   }
   
   @override
