@@ -40,7 +40,7 @@ public class WebController {
 
     public void creatWebController(WebInterface web){
         try {
-            new Thread().start(()->this.creatWebController(new Socket(SERVER_ADDRESS, SERVER_PORT), web));
+            new Thread(()->this.creatWebController(new Socket(SERVER_ADDRESS, SERVER_PORT), web)).start();
         } catch (IOException e) {
             e.printStackTrace();
         }
