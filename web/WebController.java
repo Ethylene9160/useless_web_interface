@@ -26,7 +26,7 @@ public class WebController {
         creatWebController(web);
     }
     public void send(String message){
-        sender.send(message);
+        new Thread(()->sender.send(message)).start();
     }
 
     public Socket getSocket(){
@@ -40,7 +40,7 @@ public class WebController {
 
     public void creatWebController(WebInterface web){
         try {
-            this.creatWebController(new Socket(SERVER_ADDRESS, SERVER_PORT), web);
+            new Thread().start(()->this.creatWebController(new Socket(SERVER_ADDRESS, SERVER_PORT), web));
         } catch (IOException e) {
             e.printStackTrace();
         }
