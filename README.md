@@ -19,10 +19,11 @@ Here is a naive examole.
 
 class Test impliment WebInteface{
   private WebController controller;
+  private String name;
   
-  public Test(){
+  public Test(String name){
     controller = new WebController(this);
-    controller.send();
+    this.name = name;
   }
   
   void send(){
@@ -31,7 +32,13 @@ class Test impliment WebInteface{
   
   @override
   public void webAction(String message){
-    System.out.println(message);
+    System.out.println(name + "get: " + message);
+  }
+  
+  public static void main(String[] args){
+    Test t1 = new Test("t1");
+    Test t2 = new Test("t2");
+    t1.send();
   }
 
 }
