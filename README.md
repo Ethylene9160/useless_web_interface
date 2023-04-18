@@ -34,6 +34,8 @@ class Test impliment WebInteface{
   private String name;
   
   public Test(String name){
+    //use default address and port, see at the constructor of WebController
+    //使用默认的地址和端口，参见WebController的构造器。
     controller = new WebController(this);
     this.name = name;
   }
