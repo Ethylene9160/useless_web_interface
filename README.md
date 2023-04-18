@@ -23,9 +23,9 @@ You can impliment `WebInteface.java`, and override this method. And besides, ann
 
 在你的类中，实现`WebInteface.java`并覆写其中的方法，同时声明`WebController.java`的实例变量，以实现接收消息的静态代理。
 
-Here is a naive examole.
+Here is a naive examole.(Server code is not shown)
 
-这是一个很稚嫩的例子。
+这是一个很稚嫩的例子。（服务端的代码没有被展示）
 
 ```java
 
