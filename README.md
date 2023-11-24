@@ -59,6 +59,6 @@ class Test impliment WebInteface{
 
 ```
 
-More features and functions? See another repo of the author [Webcontaact_Interface_JAVA](https://github.com/Ethylene9160/Webcontact_Interface_JAVA).
+More features and functions? See another repo of the author [Transmission_Interface_JAVA](https://github.com/Ethylene9160/Transmission_Interface_JAVA).
 
-更多好用的特性和功能？可以查看作者的另一个仓库[Webcontaact_Interface_JAVA](https://github.com/Ethylene9160/Webcontact_Interface_JAVA)。
+更多好用的特性和功能？可以查看作者的另一个仓库[Transmission_Interface_JAVA](https://github.com/Ethylene9160/Transmission_Interface_JAVA)。
